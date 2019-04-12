@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<title>Create event</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<header class="header-page">
+				<div class="container">
+					<div class="header">
+						<div class="header__logo">
+							<a href="index.html" class="header__logo-link">
+								<img src="images/logo.svg" alt="logo" class="header__logo-img">
+								<img src="images/logo-mob.svg" alt="logo" class="header__logo-mob">
+							</a>
+						</div>
+						<div class="header__registered">
+							<div class="header__registered__wrap-btn">
+								<a href="create.html" class="btn btn_primary">Create event</a>
+							</div>
+							<div class="header__registered__welcome">
+								<div class="header__registered-profile">
+									<p class="header__registered-hello">Hello, <strong class="header__registered-name">Amigo Boss...</strong></p>
+								</div>
+								<div class="header__registered-avatar">
+									<!-- <img src="images/avatar.jpg" alt="avatar" class="header__registered-pic"> -->
+									<div class="header__registered-initials">A</div>
+									<div class="header__registered__account">
+										<ul class="header__registered-list">
+											<li class="header__registered-items">
+												<a href="dashboard.html" class="header__registered-link">Dashboard</a>
+											</li>
+											<li class="header__registered-items">
+												<a href="account.html" class="header__registered-link">Account settings</a>
+											</li>
+											<li class="header__registered-items">
+												<a href="#" class="header__registered-link log-out">Log out</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="create-event">
+				<div class="container">
+					<div class="create-event__main">
+						<div class="create-event__holder-title">
+							<h2 class="h2 create-event-subject">Personal information</h2>
+						</div>
+						<form class="create-event__holder-form">
+							<div class="create-event__holder-info">
+								<div class="create-event__holder-caption">
+									<h2 class="h2 create-event-caption">Event Information</h2>
+								</div>
+								<div class="create-event-block">
+									<div class="form__box">
+										<label for="lb1" class="form__label">Event title</label>
+										<input type="text" class="form__control" id="lb1" placeholder="Event title">
+									</div>
+									<div class="form__box">
+										<div class="create-event-wrap">
+											<label for="lb2" class="form__label">Event description</label>
+											<p id="charactersRemaining" class="create-event-max">300</p>
+										</div>
+										<textarea id="tweet" class="form__control" id="lb2" placeholder="Event description" maxlength="300"></textarea>
+									</div>
+									<div class="form__box">
+										<label for="file" class="form__label">Event image</label>
+										<label for="file" class="create-event__file custom-file">
+											<div class="create-event__file-descr">
+												<img src="images/camera-add.svg" class="create-event__file-icon" alt="Add photo">
+												<p class="create-event__file-text">Add photo</p>
+											</div>
+											<input type="file" name="file" class="create-event__file-input hide" id="file" accept="image/*" onchange="previewImage(event)">
+											<img id="output_image" class="create-event__file-preview" onload="checkAvatar()"/>
+											<div class="create-event__file-tools">
+												<div class="create-event__file-tip refresh">
+													<img src="images/refresh-cw.svg" class="create-event__file-img" alt="refresh">
+												</div>
+												<div class="create-event__file-tip delete">
+													<img src="images/delete-img.svg" class="create-event__file-img" alt="delete">
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="create-event__holder-info">
+								<div class="create-event__holder-caption">
+									<h2 class="h2 create-event-caption">Event Venue</h2>
+								</div>
+								<div class="form__row">
+									<div class="form__box form__col">
+										<label for="lb4" class="form__label">City name</label>
+										<input type="text" class="form__control" id="lb4" placeholder="City name">
+									</div>
+									<div class="form__box form__col">
+										<label for="lb5" class="form__label">Street number</label>
+										<input type="text" class="form__control" id="lb5" placeholder="Street number">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__box form__col mb0">
+										<label for="lb6" class="form__label">Street name</label>
+										<input type="text" class="form__control" id="lb6" placeholder="Street name">
+									</div>
+									<div class="form__box form__col mb0">
+										<label for="lb7" class="form__label">Zip code/Postcode</label>
+										<input type="text" class="form__control" id="lb7" placeholder="Zip code/Postcode">
+									</div>
+								</div>
+							</div>
+							<div class="create-event__holder-info">
+								<div class="create-event__holder-caption">
+									<h2 class="h2 create-event-caption">Date</h2>
+								</div>
+								<div class="create-event-block">
+									<div class="form__row">
+										<div class="form__box form__col mb0">
+											<label for="lb8" class="form__label">Day/Month/Year</label>
+											<div class="datepicker-here-holder">
+												<input type="text" class="form__control datepicker-here" id="lb8" placeholder="Day/Month/Year"data-language='en' data-date-format="dd/mm/yyyy">
+											</div>
+										</div>
+										<div class="form__box form__col mb0">
+											<label for="lb9" class="form__label">HH: MM</label>
+											<input type="text" class="form__control" id="lb9" placeholder="00:00" data-name="time">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-event__holder-info">
+								<div class="create-event__holder-caption mb0">
+									<div class="create-event__holder-calc">
+										<h2 class="h2 create-event-caption">Cost Calculator</h2>
+										<label class="switch switch_type1" role="switch">
+											<input type="checkbox" class="switch__toggle">
+											<span class="switch__label"></span>
+										</label>
+									</div>
+								</div>
+								<div class="create-event__holder-estimation">
+									<div class="form__row">
+										<div class="form__box form__col mb0">
+											<div class="create-event-wrap">
+												<label for="eventCost" class="form__label">Event cost</label>
+											</div>
+											<input type="text" class="form__control" placeholder="0" id="eventCost">
+										</div>
+										<div class="form__box form__col mb0">
+											<label for="countPeople" class="form__label">Count of people</label>
+											<input type="text" class="form__control" placeholder="0" id="countPeople">
+										</div>
+									</div>
+									<div class="create-event__holder-cost">
+										<h3 class="create-event-result">Total cost: <span class="value">0</span></h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="create-event__holder-info">
+								<div class="create-event__holder-caption">
+									<h2 class="h2 create-event-caption">Tasks list for the event</h2>
+								</div>
+
+								<div class="event__tasks__holder">
+									<h3 class="h3 event__tasks-number">Task 1</h3>
+									<div class="event__tasks-info _create">
+										<div class="form__box">
+											<label for="lb10" class="form__label">Task title</label>
+											<input type="text" class="form__control" id="lb10" placeholder="Task title" name="title[]">
+										</div>
+										<div class="form__box">
+											<label for="lb11" class="form__label">Task description</label>
+											<input type="text" class="form__control" id="lb11" placeholder="Task description" name="description[]">
+										</div>
+										<div class="event__tasks__wrap-user">
+											<div class="event__tasks-block">
+												<div class="event__tasks-pointer">
+													<img src="images/pointer.svg" alt="" class="event__tasks-pointer-icon">
+												</div>
+												<div class="event__tasks-user _hover">
+													<div class="event__tasks-added">
+														<div class="event__tasks-avatar">
+															<!-- <img src="images/avatar-account.png" alt="porfile" class="event__tasks-avatar-icon"> -->
+															<div class="event__tasks-avatar-initials">A</div>
+														</div>
+														<div class="event__tasks-profile">
+															<h4 class="h4 event__tasks-profile-name">Amigo Boss</h4>
+															<p class="event__tasks-profile-email">amigoboss@gmail.com</p>
+														</div>
+													</div>
+													<a href="#deletexecutor" class="event__tasks-delete call-modal-js">
+														<img src="images/delete.svg" alt="delete" class="event__tasks-delete-icon">
+													</a>
+												</div>
+											</div>
+											<a href="#" class="btn btn_lg btn_danger btn-del">Delete task</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="event__tasks__holder">
+									<h3 class="h3 event__tasks-number">Task 2</h3>
+									<div class="event__tasks-info _create">
+										<div class="form__box">
+											<label for="lb12" class="form__label">Task title</label>
+											<input type="text" class="form__control" id="lb12" placeholder="Task title" name="title[]">
+										</div>
+										<div class="form__box">
+											<label for="lb13" class="form__label">Task description</label>
+											<input type="text" class="form__control" id="lb13" placeholder="Task description" name="description[]">
+										</div>
+										<div class="event__tasks__wrap-user">
+											<div class="event__tasks-block">
+												<div class="event__tasks-pointer">
+													<img src="images/pointer.svg" alt="" class="event__tasks-pointer-icon">
+												</div>
+												<div class="event__tasks-user">
+													No one is performing this task at the moment.
+												</div>
+											</div>
+											<a href="#" class="btn btn_lg btn_danger btn-del">Delete task</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="create-event__holder-buttons">
+								<a href="#" class="btn btn_lg btn_default btn-add">Add task</a>
+								<div class="create-event__holder-buttons-group">
+									<button type="submit" class="btn create-event-save">Save draft</button>
+									<a href="#itemcreated" class="btn btn_primary btn_primary-lg call-modal-js">Create event</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer-page">
+			<div class="container">
+				<div class="footer">
+					<ul class="footer__nav">
+						<li class="footer-item">
+							<a href="#" class="footer-link">Support request</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Imprint</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Privacy Policy</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Terms and Conditions</a>
+						</li>
+					</ul>
+					<ul class="header__layout">
+						<li class="header__layout-items">
+							<a href="#" class="header__layout-link header__layout-link_active">en</a>
+						</li>
+						<li class="header__layout-items">
+							<a href="#" class="header__layout-link">de</a>
+						</li>
+					</ul>
+					<p class="copy">© Eventamigos | 2019</p>
+				</div>
+			</div>
+		</footer>
+		<!-- /Modal block with all popup form-->
+		<!-- Modal - Add executor -->
+		<div id="addexecutor" class="modal modal_lg mfp-hide">
+			<div class="modal__holder">
+				<h2 class="h2 account-heading">Add executor</h2>
+				<form action="#">
+					<div class="form-group__control">
+						<div class="form__box">
+							<input type="text" placeholder="Full name" class="form__control" name="fullname" id="firstname-executor">
+						</div>
+						<div class="form__box">
+							<input type="email" name="email-executor" id="email-executor" placeholder="E-mail" class="form__control">
+						</div>
+					</div>
+				</form>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<button type="submit" class="btn btn_primary btn_primary-lg">Add executor</button>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete account -->
+		<div id="account" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete your account?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete task -->
+		<div id="task" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete this task?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete event -->
+		<div id="event" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete this event?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete executor -->
+		<div id="deletexecutor" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete this executor?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Not performing -->
+		<div id="notperforming" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure not performing the task</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Item created -->
+		<div id="itemcreated" class="modal modal_lg mfp-hide">
+			<div class="modal__holder">
+				<h2 class="h2 modal__heading modal__heading_sm">Item created</h2>
+				<a href="#" class="modal__link modal__link_item">https://eventamigos.com/en/event/pu/item12834900</a>
+				<a href="dashboard.html" class="btn btn_w100 btn_primary btn_primary-lg">To Dashboard</a>
+				<a href="create.html" class="modal__link">Create Another Event</a>
+			</div>
+		</div>
+		<!-- Modal - Change Password -->
+		<div id="changepassword" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h2 class="h2 modal__heading modal__heading_sm">Change Password</h2>
+				<form action="#">
+					<div class="form-group__control">
+						<div class="form__box password">
+							<input type="password" name="password" placeholder="Password" class="form__control" id="password">
+							<span class="password__view"></span>
+						</div>
+						<div class="form__box password">
+							<input type="password" placeholder="Repeated password" class="form__control" id="password_again" name="password_again">
+							<span class="password__view"></span>
+						</div>
+					</div>
+					<div class="modal__buttons-wrap">
+						<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+						<button type="submit" class="btn btn_primary btn_primary-lg">Change</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- / wrapper -->
+
+	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/masked.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/datepicker.en.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<svg id="el_tGFzbYPaS" viewBox="0 0 374 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	@-webkit-keyframes el_ieKYLDCBmx_2gNFk6nKs_Animation {
+		0% {
+			-webkit-transform: translate(-300px, 0px);
+			transform: translate(-300px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(774px, 0px);
+			transform: translate(774px, 0px);
+		}
+	}
+
+	@keyframes el_ieKYLDCBmx_2gNFk6nKs_Animation {
+		0% {
+			-webkit-transform: translate(-300px, 0px);
+			transform: translate(-300px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(774px, 0px);
+			transform: translate(774px, 0px);
+		}
+	}
+
+	#el_tGFzbYPaS * {
+		-webkit-animation-duration: 1.5s;
+		animation-duration: 1.5s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+		animation-timing-function: cubic-bezier(0, 0, 1, 1);
+	}
+
+	#el_iA-dhI7FFm,
+	#el_iA-dhI7FFm_1_,
+	#el_iA-dhI7FFm_2_,
+	#el_iA-dhI7FFm_3_,
+	#el_iA-dhI7FFm_4_,
+	#el_iA-dhI7FFm_5_{
+		fill: #D3DCE6;
+	}
+
+	#el_ieKYLDCBmx {
+		-webkit-transform: translate(-82px, 0);
+		transform: translate(-82px, 0);
+		fill: url(#paint0_linear);
+	}
+
+	#el_ieKYLDCBmx_2gNFk6nKs {
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		transform-box: fill-box;
+		-webkit-animation-name: el_ieKYLDCBmx_2gNFk6nKs_Animation;
+		animation-name: el_ieKYLDCBmx_2gNFk6nKs_Animation;
+		-webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		-webkit-transform: translate(-100px, 0px);
+		transform: translate(-100px, 0px);
+	}
+	.st000{
+		fill: none;
+	}
+</style>
+<g filter="" id="el_iA-dhI7FFmm">
+	<rect fill-rule="evenodd" clip-rule="evenodd" x="0.5" y="0.5" width="373" height="332" rx="2.5" fill="none" stroke="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 1.34314 1.34315 0 3 0H371C372.657 0 374 1.34315 374 3V180H0V3Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 199C56 197.343 57.3431 196 59 196H347C348.657 196 350 197.343 350 199V212C350 213.657 348.657 215 347 215H59C57.3431 215 56 213.657 56 212V199Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M16 199C16 197.343 17.3431 196 19 196H41C42.6569 196 44 197.343 44 199V215H16V199Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 223C56 221.343 57.3431 220 59 220H307C308.657 220 310 221.343 310 223V236C310 237.657 308.657 239 307 239H59C57.3431 239 56 237.657 56 236V223Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 250C56 248.343 57.3431 247 59 247H284C285.657 247 287 248.343 287 250V263C287 264.657 285.657 266 284 266H59C57.3431 266 56 264.657 56 263V250Z" fill="#F9FAFC"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M16 215H44V231C44 232.657 42.6569 234 41 234H19C17.3431 234 16 232.657 16 231V215Z" fill="#F9FAFC"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 272C56 270.343 57.3431 269 59 269H307C308.657 269 310 270.343 310 272V285C310 286.657 308.657 288 307 288H59C57.3431 288 56 286.657 56 285V272Z" fill="#F9FAFC"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 294C56 292.343 57.3431 291 59 291H245C246.657 291 248 292.343 248 294V307C248 308.657 246.657 310 245 310H59C57.3431 310 56 308.657 56 307V294Z" fill="#F9FAFC"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="375" height="400">
+		<feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="400">
+	<rect fill-rule="evenodd" clip-rule="evenodd" x="0.5" y="0.5" width="373" height="332" rx="2.5" fill="none" stroke="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 1.34314 1.34315 0 3 0H371C372.657 0 374 1.34315 374 3V180H0V3Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 199C56 197.343 57.3431 196 59 196H347C348.657 196 350 197.343 350 199V212C350 213.657 348.657 215 347 215H59C57.3431 215 56 213.657 56 212V199Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M16 199C16 197.343 17.3431 196 19 196H41C42.6569 196 44 197.343 44 199V215H16V199Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 223C56 221.343 57.3431 220 59 220H307C308.657 220 310 221.343 310 223V236C310 237.657 308.657 239 307 239H59C57.3431 239 56 237.657 56 236V223Z" fill="#E0E6ED"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 250C56 248.343 57.3431 247 59 247H284C285.657 247 287 248.343 287 250V263C287 264.657 285.657 266 284 266H59C57.3431 266 56 264.657 56 263V250Z" fill="#F9FAFC"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M16 215H44V231C44 232.657 42.6569 234 41 234H19C17.3431 234 16 232.657 16 231V215Z" fill="#F9FAFC"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 272C56 270.343 57.3431 269 59 269H307C308.657 269 310 270.343 310 272V285C310 286.657 308.657 288 307 288H59C57.3431 288 56 286.657 56 285V272Z" fill="#F9FAFC"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M56 294C56 292.343 57.3431 291 59 291H245C246.657 291 248 292.343 248 294V307C248 308.657 246.657 310 245 310H59C57.3431 310 56 308.657 56 307V294Z" fill="#F9FAFC"/>
+</mask>
+<g mask="url(#mask0)" id="el_LX6pjD8iVA" class="st2">
+	<g id="el_ieKYLDCBmx_2gNFk6nKs" data-animator-group="true" data-animator-type="0">
+		<rect id="el_ieKYLDCBmx" x="0" y="0" class="st000" width="375" height="333"/>
+	</g>
+</g>
+<defs>
+	<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(340 54.7813) scale(340 45.5625) rotate(180)">
+		<stop stop-color="#c5d1de" stop-opacity="0"/>
+		<stop offset="0.0883978" stop-color="#b1bfd0"/>
+		<stop offset="1" stop-color="#c5d1de" stop-opacity="0"/>
+	</linearGradient>
+</defs>
+<script>
+	(function(){var a=document.querySelector(&apos;#el_tGFzbYPaS&apos;),b=a.querySelectorAll(&apos;style&apos;),c=function(d){b.forEach(function(f){var g=f.textContent;g&amp;&amp;(f.textContent=g.replace(/transform-box:[^;\r\n]*/gi,&apos;transform-box: &apos;+d))})};c(&apos;initial&apos;),window.requestAnimationFrame(function(){return c(&apos;fill-box&apos;)})})();
+</script>
+</svg>

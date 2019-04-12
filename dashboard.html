@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<header class="header-page">
+				<div class="container">
+					<div class="header">
+						<div class="header__logo">
+							<a href="index.html" class="header__logo-link">
+								<img src="images/logo.svg" alt="logo" class="header__logo-img">
+								<img src="images/logo-mob.svg" alt="logo" class="header__logo-mob">
+							</a>
+						</div>
+						<div class="header__registered">
+							<div class="header__registered__wrap-btn">
+								<a href="create.html" class="btn btn_primary">Create event</a>
+							</div>
+							<div class="header__registered__welcome">
+								<div class="header__registered-profile">
+									<p class="header__registered-hello">Hello, <strong class="header__registered-name">Amigo Boss...</strong></p>
+								</div>
+								<div class="header__registered-avatar">
+									<!-- <img src="images/avatar.jpg" alt="avatar" class="header__registered-pic"> -->
+									<div class="header__registered-initials">A</div>
+									<div class="header__registered__account">
+										<ul class="header__registered-list">
+											<li class="header__registered-items">
+												<a href="dashboard.html" class="header__registered-link">Dashboard</a>
+											</li>
+											<li class="header__registered-items">
+												<a href="account.html" class="header__registered-link">Account settings</a>
+											</li>
+											<li class="header__registered-items">
+												<a href="#" class="header__registered-link log-out">Log out</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="dashboard">
+				<div class="container">
+					<div class="dashboard__main">
+						<div class="dashboard__heading">
+							<h2 class="h2 dashboard-title">Dashboard</h2>
+							<div class="dashboard-sort dropdown">
+								<a href="#" class="dropdown-btn">Sort by: <span class="dropdown-menu__sort-name">Immediate</span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Popular</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Immediate</a>
+									</li>
+								</ul>
+							</div>
+							<ul class="dashboard-tabs">
+								<li class="dashboard-tabs__item">
+									<a href="#" class="dashboard-tabs__link active-tabs">Proceed</a>
+								</li>
+								<li class="dashboard-tabs__item">
+									<a href="#" class="dashboard-tabs__link">Drafts</a>
+								</li>
+								<li class="dashboard-tabs__item">
+									<a href="#" class="dashboard-tabs__link">Completed</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dashboard__board">
+							<a href="#" class="dashboard-cell dashboard-cell_load">
+								<div class="dashboard-wrap-options">
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="share">
+											<div class="dashboard-txt share">Share</div>
+											<img src="images/share.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="copy">
+											<div class="dashboard-txt copy">Copy to drafts</div>
+											<img src="images/copy.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="pencil-square">
+											<div class="dashboard-txt edit">Edit</div>
+											<img src="images/pencil-square.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="delete">
+											<div class="dashboard-txt delete">Delete</div>
+											<img src="images/delete.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+								</div>
+								<div class="dashboard-content">
+									<div class="dashboard-img img-to-bg">
+										<img src="images/01.jpg" alt="images" class="dashboard-pic">
+									</div>
+									<div class="dashboard-subject">
+										<div class="dashboard-wrap-caption">
+											<div class="dashboard-date">
+												<p class="dashboard-month accent">JAN</p>
+												<p class="dashboard-day card">29</p>
+											</div>
+											<h3 class="h3 dashboard-desc">Inman Connect New York 2019 - Real Estate Conference</h3>
+										</div>
+										<div class="dashboard-wrap-text">
+											<p class="dashboard-card">Tue, Dec 31, 10:00pm</p>
+											<p class="dashboard-place">New York, NY</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dashboard-cell dashboard-cell_load drafts">
+								<div class="dashboard-wrap-options">
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="share">
+											<div class="dashboard-txt share">Share</div>
+											<img src="images/share.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="external-link">
+											<div class="dashboard-txt copy">Move to Proceed</div>
+											<img src="images/external-link.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="pencil-square">
+											<div class="dashboard-txt edit">Edit</div>
+											<img src="images/pencil-square.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="delete">
+											<div class="dashboard-txt delete">Delete</div>
+											<img src="images/delete.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+								</div>
+								<div class="dashboard-content">
+									<div class="dashboard-img img-to-bg">
+										<img src="images/02.jpg" alt="images" class="dashboard-pic">
+									</div>
+									<div class="dashboard-subject">
+										<div class="dashboard-wrap-caption">
+											<div class="dashboard-date">
+												<p class="dashboard-month accent">DEC</p>
+												<p class="dashboard-day card">31</p>
+											</div>
+											<h3 class="h3 dashboard-desc">IFREE NEW YEARS EVE PARTY TICKETS !</h3>
+										</div>
+										<div class="dashboard-wrap-text">
+											<p class="dashboard-card">Tue, Dec 31, 10:00pm</p>
+											<p class="dashboard-place">New York, NY</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dashboard-cell dashboard-cell_load completed">
+								<div class="dashboard-wrap-options">
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="share">
+											<div class="dashboard-txt share">Share</div>
+											<img src="images/share.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="copy">
+											<div class="dashboard-txt copy">Copy to drafts</div>
+											<img src="images/copy.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="pencil-square">
+											<div class="dashboard-txt edit">Edit</div>
+											<img src="images/pencil-square.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="delete">
+											<div class="dashboard-txt delete">Delete</div>
+											<img src="images/delete.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+								</div>
+								<div class="dashboard-content">
+									<div class="dashboard-img img-to-bg">
+										<img src="images/03.jpg" alt="images" class="dashboard-pic">
+									</div>
+									<div class="dashboard-subject">
+										<div class="dashboard-wrap-caption">
+											<div class="dashboard-date">
+												<p class="dashboard-month accent">FAB</p>
+												<p class="dashboard-day card">03</p>
+											</div>
+											<h3 class="h3 dashboard-desc">Old School Vs New School Brunch & Day Party Michael Jac...</h3>
+										</div>
+										<div class="dashboard-wrap-text">
+											<p class="dashboard-card">Sun, Feb 3, 12:00pm</p>
+											<p class="dashboard-place">440 WEST 57TH STREET EMBASSY BALL...</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dashboard-cell dashboard-cell_load">
+								<div class="dashboard-wrap-options">
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="share">
+											<div class="dashboard-txt share">Share</div>
+											<img src="images/share.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="copy">
+											<div class="dashboard-txt copy">Copy to drafts</div>
+											<img src="images/copy.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="pencil-square">
+											<div class="dashboard-txt edit">Edit</div>
+											<img src="images/pencil-square.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="delete">
+											<div class="dashboard-txt delete">Delete</div>
+											<img src="images/delete.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+								</div>
+								<div class="dashboard-content">
+									<div class="dashboard-img img-to-bg">
+										<img src="images/04.jpg" alt="images" class="dashboard-pic">
+									</div>
+									<div class="dashboard-subject">
+										<div class="dashboard-wrap-caption">
+											<div class="dashboard-date">
+												<p class="dashboard-month accent">FAB</p>
+												<p class="dashboard-day card">02</p>
+											</div>
+											<h3 class="h3 dashboard-desc">Old School Vs New School Brunch & Day Party Michael Jac...</h3>
+										</div>
+										<div class="dashboard-wrap-text">
+											<p class="dashboard-card">Sun, Feb 3, 12:00pm</p>
+											<p class="dashboard-place">440 WEST 57TH STREET EMBASSY BALL...</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dashboard-cell dashboard-cell_load">
+								<div class="dashboard-wrap-options">
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="share">
+											<div class="dashboard-txt share">Share</div>
+											<img src="images/share.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="copy">
+											<div class="dashboard-txt copy">Copy to drafts</div>
+											<img src="images/copy.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="pencil-square">
+											<div class="dashboard-txt edit">Edit</div>
+											<img src="images/pencil-square.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="delete">
+											<div class="dashboard-txt delete">Delete</div>
+											<img src="images/delete.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+								</div>
+								<div class="dashboard-content">
+									<div class="dashboard-img img-to-bg">
+										<img src="images/05.jpg" alt="images" class="dashboard-pic">
+									</div>
+									<div class="dashboard-subject">
+										<div class="dashboard-wrap-caption">
+											<div class="dashboard-date">
+												<p class="dashboard-month accent">JAN</p>
+												<p class="dashboard-day card">29</p>
+											</div>
+											<h3 class="h3 dashboard-desc">Inman Connect New York 2019 - Real Estate Conference</h3>
+										</div>
+										<div class="dashboard-wrap-text">
+											<p class="dashboard-card">Tue, Jan 29, 9:00am</p>
+											<p class="dashboard-place">1535 Broadway, New York, NY 10036</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dashboard-cell dashboard-cell_load">
+								<div class="dashboard-wrap-options">
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="share">
+											<div class="dashboard-txt share">Share</div>
+											<img src="images/share.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="copy">
+											<div class="dashboard-txt copy">Copy to drafts</div>
+											<img src="images/copy.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="pencil-square">
+											<div class="dashboard-txt edit">Edit</div>
+											<img src="images/pencil-square.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+									<div class="dashboard-hover">
+										<button class="dashboard-option" data-name="delete">
+											<div class="dashboard-txt delete">Delete</div>
+											<img src="images/delete.svg" alt="" class="dashboard-icon">
+										</button>
+									</div>
+								</div>
+								<div class="dashboard-content">
+									<div class="dashboard-img img-to-bg">
+										<img src="images/06.jpg" alt="images" class="dashboard-pic">
+									</div>
+									<div class="dashboard-subject">
+										<div class="dashboard-wrap-caption">
+											<div class="dashboard-date">
+												<p class="dashboard-month accent">FAB</p>
+												<p class="dashboard-day card">31</p>
+											</div>
+											<h3 class="h3 dashboard-desc">FREE NEW YEARS EVE PARTY TICKETS !</h3>
+										</div>
+										<div class="dashboard-wrap-text">
+											<p class="dashboard-card">Tue, Dec 31, 10:00pm</p>
+											<p class="dashboard-place">New York, NY</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="page-pagination">
+							<ul class="pagination-numbers">
+								<li class="pagination-numbers__number pagination-numbers__number_active">
+									<a href="#" class="pagination-numbers__link"><i class="pagination-numbers__arrow"></i></a>
+								</li>
+								<li class="pagination-numbers__number pagination-numbers__number_current">
+									<a href="#" class="pagination-numbers__link">1</a>
+								</li>
+								<li class="pagination-numbers__number">
+									<a href="#" class="pagination-numbers__link">2</a>
+								</li>
+								<li class="pagination-numbers__number">
+									<a href="#" class="pagination-numbers__link">3</a>
+								</li>
+								<li class="pagination-numbers__number">
+									<span class="pagination-numbers__link break">...</span>
+								</li>
+								<li class="pagination-numbers__number">
+									<a href="#" class="pagination-numbers__link">25</a>
+								</li>
+								<li class="pagination-numbers__number">
+									<a href="#" class="pagination-numbers__link"><i class="pagination-numbers__arrow"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer-page">
+			<div class="container">
+				<div class="footer">
+					<ul class="footer__nav">
+						<li class="footer-item">
+							<a href="#" class="footer-link">Support request</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Imprint</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Privacy Policy</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Terms and Conditions</a>
+						</li>
+					</ul>
+					<ul class="header__layout">
+						<li class="header__layout-items">
+							<a href="#" class="header__layout-link header__layout-link_active">en</a>
+						</li>
+						<li class="header__layout-items">
+							<a href="#" class="header__layout-link">de</a>
+						</li>
+					</ul>
+					<p class="copy">© Eventamigos | 2019</p>
+				</div>
+			</div>
+		</footer>
+		<div class="notifications" data-name="save">
+			Changes have been saved!
+			<i class="notifications__close"><img src="images/x-close_white.svg" alt="close"></i>
+		</div>
+		
+		<div class="notifications" data-name="event-copy">
+			Success! Event copied.
+			<i class="notifications__close"><img src="images/x-close_white.svg" alt="close"></i>
+		</div>
+		
+		<div class="notifications" data-name="link-copy">
+			Link copied!
+			<i class="notifications__close"><img src="images/x-close_white.svg" alt="close"></i>
+		</div>
+		
+		<div class="notifications" data-name="sent">
+			Your message successfuly sent
+			<i class="notifications__close"><img src="images/x-close_white.svg" alt="close"></i>
+		</div>
+		
+		<div class="notifications" data-name="success">
+			Success! Event moved to procced
+			<i class="notifications__close"><img src="images/x-close_white.svg" alt="close"></i>
+		</div>
+		<!-- Modal - Add executor -->
+		<div id="addexecutor" class="modal modal_lg mfp-hide">
+			<div class="modal__holder">
+				<h2 class="h2 account-heading">Add executor</h2>
+				<form action="#">
+					<div class="form-group__control">
+						<div class="form__box">
+							<input type="text" placeholder="Full name" class="form__control" name="fullname" id="firstname-executor">
+						</div>
+						<div class="form__box">
+							<input type="email" name="email-executor" id="email-executor" placeholder="E-mail" class="form__control">
+						</div>
+					</div>
+				</form>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<button type="submit" class="btn btn_primary btn_primary-lg">Add executor</button>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete account -->
+		<div id="account" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete your account?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete task -->
+		<div id="task" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete this task?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete event -->
+		<div id="event" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete this event?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Delete executor -->
+		<div id="deletexecutor" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure you want to delete this executor?</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Not performing -->
+		<div id="notperforming" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h3 class="h3 modal__heading">Are you sure not performing the task</h3>
+				<div class="modal__buttons-wrap">
+					<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+					<a href="#" class="btn btn_lg btn_danger">Delete</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal - Item created -->
+		<div id="itemcreated" class="modal modal_lg mfp-hide">
+			<div class="modal__holder">
+				<h2 class="h2 modal__heading modal__heading_sm">Item created</h2>
+				<a href="#" class="modal__link modal__link_item">https://eventamigos.com/en/event/pu/item12834900</a>
+				<a href="dashboard.html" class="btn btn_w100 btn_primary btn_primary-lg">To Dashboard</a>
+				<a href="create.html" class="modal__link">Create Another Event</a>
+			</div>
+		</div>
+		<!-- Modal - Change Password -->
+		<div id="changepassword" class="modal mfp-hide">
+			<div class="modal__holder">
+				<h2 class="h2 modal__heading modal__heading_sm">Change Password</h2>
+				<form action="#">
+					<div class="form-group__control">
+						<div class="form__box password">
+							<input type="password" name="password" placeholder="Password" class="form__control" id="password">
+							<span class="password__view"></span>
+						</div>
+						<div class="form__box password">
+							<input type="password" placeholder="Repeated password" class="form__control" id="password_again" name="password_again">
+							<span class="password__view"></span>
+						</div>
+					</div>
+					<div class="modal__buttons-wrap">
+						<a href="#" class="btn btn_lg btn_default btn-cancel">Cancel</a>
+						<button type="submit" class="btn btn_primary btn_primary-lg">Change</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- / wrapper -->
+
+	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/masked.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/datepicker.en.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

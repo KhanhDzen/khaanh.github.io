@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<title>Event Amigos</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<header class="header-page">
+				<div class="container">
+					<div class="header">
+						<div class="header__logo">
+							<a href="index.html" class="header__logo-link">
+								<img src="images/logo.svg" alt="logo" class="header__logo-img">
+								<img src="images/logo-mob.svg" alt="logo" class="header__logo-mob">
+							</a>
+						</div>
+						<div class="header__nav">
+							<ul class="header__buttons">
+								<li class="header__buttons-items">
+									<a href="signin.html" class="btn btn_default">Sign In</a>
+								</li>
+								<li class="header__buttons-items">
+									<a href="signup.html" class="btn btn_primary">Sign Up</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- //= inc/_header_login.html -->
+			<section class="hero">
+				<div class="hero__full-screen">
+					<div class="container">
+						<div class="hero__content">
+							<div class="hero-block">
+								<div class="hero-desc">
+									<h1 class="h1 hero-title">A new way to organize events</h1>
+									<h2 class="h4 hero-subtitle">Create and plan private events more efficiently than ever before</h2>
+									<div class="hero-typed">
+										<div class="hero-strings" id="hero-strings-js">
+											<p class="hero-str">Birthday Party</p>
+											<p class="hero-str">Garden Party</p>
+											<p class="hero-str">Move</p>
+											<p class="hero-str">Wedding</p>
+											<p class="hero-str">Student Party</p>
+											<p class="hero-str">Family Party</p>
+										</div>
+										<span class="hero-event" id="typed"></span>
+									</div>
+								</div>
+								<div class="hero-btn-wrap">
+									<a href="create.html" class="btn btn_primary">Organize event</a>
+								</div>
+							</div>
+							<div class="hero-pic">
+								<img src="images/hero-img.svg" alt="Amigo" class="hero-img">
+							</div>
+						</div>
+					</div>
+					<div class="hero__features">
+						<a href="#task" class="hero__features-link">Discover the Features<i class="hero__features-ico"><img src="images/ico-arrow_orange.svg" alt="image description"></i></a>
+					</div>
+				</div>
+			</section>
+			<section id="task" class="create">
+				<div class="container">
+					<div class="create__main">
+						<div class="create__main-pic">
+							<img src="images/01.svg" alt="image" class="create__main-img">
+						</div>
+						<div class="create__main-content">
+							<p class="create__main-caption accent">Task List</p>
+							<h2 class="create__main-title h2">Create an unlimited number of tasks for which you need help toorganize a great event</h2>
+							<p class="create__main-subtitle subtitle">The invitees can choose which task they want to take on</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="change">
+				<div class="container">
+					<div class="create__main">
+						<div class="create__main-content">
+							<p class="create__main-caption accent">Venue Navigation</p>
+							<h2 class="create__main-title h2">Change the location of your venue and people will automatically find it</h2>
+							<p class="create__main-subtitle subtitle">The integrated navigation makes it easy to discover a new location</p>
+						</div>
+						<div class="create__main-pic">
+							<img src="images/02.svg" alt="image" class="create__main-img">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="overloaded">
+				<div class="container">
+					<div class="create__main">
+						<div class="create__main-pic">
+							<img src="images/03.svg" alt="image" class="create__main-img">
+						</div>
+						<div class="create__main-content">
+							<p class="create__main-caption accent">Clean Communication</p>
+							<h2 class="create__main-title h2">Overloaded chats are a thing of the past and simplicity is on the way</h2>
+							<p class="create__main-subtitle subtitle">Choose the first free event planning tool that removes unneeded features. Wait it is the first tool for planning events</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="registration">
+				<div class="container">
+					<div class="registration__block">
+						<div class="registration-content">
+							<h2 class="h2 registration-title">Free registration</h2>
+							<p class="registration-subtitle subtitle">Create and organize an unlimited number of events and manage them in a clean dashboard</p>
+						</div>
+						<form class="form-group">
+							<div class="form-group__control">
+								<div class="form__box">
+									<input type="text" placeholder="First name" class="form__control" name="firstname" id="firstname" minlength="2" required>
+								</div>
+								<div class="form__box">
+									<input type="text" placeholder="Last name" class="form__control" name="lastname" id="lastname" minlength="2" required>
+								</div>
+								<div class="form__box">
+									<input type="text" name="birthday" placeholder="Date of birthday" class="form__control b-day">
+								</div>
+								<div class="form__box">
+									<input type="email" name="email" placeholder="E-mail" class="form__control">
+								</div>
+								<div class="form__box password">
+									<input type="password" name="password" placeholder="Password" class="form__control" id="password">
+									<span class="password__view"></span>
+								</div>
+								<div class="form__box password">
+									<input type="password" placeholder="Repeated password" class="form__control" id="password_again" name="password_again">
+									<span class="password__view"></span>
+								</div>
+								<div class="form-group-check">
+									<input type="checkbox" class="form-group-checkbox" id="privacy" name="agree">
+									<label for="privacy" class="form-group-privacy">
+										<p class="form-group-agree">I agree to the <a href="#" class="link-to-text">Terms&Conditions</a> and the strong <a href="#" class="link-to-text">Privacy Policy</a></p>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn_primary btn_primary-lg btn_w100 form-group-button-dis btn-disable" disabled>Create your account</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer-page">
+			<div class="container">
+				<div class="footer">
+					<ul class="footer__nav">
+						<li class="footer-item">
+							<a href="#" class="footer-link">Support request</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Imprint</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Privacy Policy</a>
+						</li>
+						<li class="footer-item">
+							<a href="#" class="footer-link">Terms and Conditions</a>
+						</li>
+					</ul>
+					<ul class="header__layout">
+						<li class="header__layout-items">
+							<a href="#" class="header__layout-link header__layout-link_active">en</a>
+						</li>
+						<li class="header__layout-items">
+							<a href="#" class="header__layout-link">de</a>
+						</li>
+					</ul>
+					<p class="copy">© Eventamigos | 2019</p>
+				</div>
+			</div>
+		</footer>
+	</div><!-- / wrapper -->
+
+	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/masked.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/datepicker.en.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
