@@ -2184,6 +2184,9 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 520px;
     margin: 0 auto; }
     @media (max-width: 767px) {
