@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Sonder Digital</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16 32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800 display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container container">
+
+    <div class="logo">
+     <svg width="204" height="21" viewBox="0 0 204 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M34.6228 20.1212C33.5676 20.1212 32.5563 19.953 31.589 19.6166C30.6217 19.2803 29.8742 18.8363 29.3466 18.2846L29.9351 17.1343C30.4492 17.6455 31.1324 18.0593 31.9847 18.3754C32.837 18.6916 33.7164 18.8497 34.6228 18.8497C35.8946 18.8497 36.8483 18.6176 37.4842 18.1534C38.1201 17.6893 38.438 17.0872 38.438 16.3472C38.438 15.7821 38.2655 15.3313 37.9205 14.995C37.5755 14.6586 37.1527 14.3996 36.6522 14.218C36.1516 14.0363 35.4549 13.8379 34.562 13.6226C33.4932 13.3535 32.6409 13.0945 32.005 12.8456C31.3691 12.5967 30.8246 12.2166 30.3714 11.7053C29.9182 11.1941 29.6915 10.5012 29.6915 9.62662C29.6915 8.91352 29.8809 8.26435 30.2598 7.67907C30.6386 7.0938 31.2203 6.62626 32.005 6.27644C32.7897 5.92662 33.7637 5.75171 34.9272 5.75171C35.739 5.75171 36.5338 5.86271 37.3117 6.08471C38.0896 6.30671 38.7627 6.6128 39.3309 7.00298L38.8236 8.19371C38.2283 7.80353 37.5924 7.51089 36.916 7.3158C36.2395 7.12071 35.5766 7.02316 34.9272 7.02316C33.6826 7.02316 32.7457 7.26198 32.1166 7.73962C31.4875 8.21726 31.173 8.8328 31.173 9.58625C31.173 10.1513 31.3455 10.6054 31.6904 10.9485C32.0354 11.2916 32.4684 11.554 32.9892 11.7356C33.5101 11.9173 34.2102 12.1157 35.0896 12.331C36.1313 12.5866 36.9735 12.8389 37.6161 13.0878C38.2587 13.3367 38.8033 13.7134 39.2497 14.218C39.6962 14.7225 39.9194 15.4053 39.9194 16.2664C39.9194 16.9795 39.7266 17.6287 39.341 18.214C38.9555 18.7993 38.3636 19.2634 37.5654 19.6065C36.7672 19.9496 35.7863 20.1212 34.6228 20.1212ZM49.177 20.1212C47.77 20.1212 46.4949 19.8083 45.3517 19.1827C44.2085 18.5571 43.3156 17.6994 42.673 16.6095C42.0303 15.5197 41.709 14.2954 41.709 12.9364C41.709 11.5775 42.0303 10.3532 42.673 9.26335C43.3156 8.17352 44.2085 7.3158 45.3517 6.69016C46.4949 6.06452 47.77 5.75171 49.177 5.75171C50.584 5.75171 51.8523 6.06116 52.982 6.68007C54.1117 7.29898 55.0012 8.1567 55.6506 9.25325C56.3 10.3498 56.6247 11.5775 56.6247 12.9364C56.6247 14.2954 56.3 15.5231 55.6506 16.6196C55.0012 17.7162 54.1117 18.5739 52.982 19.1928C51.8523 19.8117 50.584 20.1212 49.177 20.1212ZM49.177 18.7892C50.2999 18.7892 51.3146 18.5369 52.221 18.0323C53.1275 17.5278 53.8377 16.8282 54.3518 15.9334C54.8659 15.0387 55.123 14.0397 55.123 12.9364C55.123 11.8332 54.8659 10.8342 54.3518 9.93944C53.8377 9.0447 53.1275 8.34507 52.221 7.84053C51.3146 7.33598 50.2999 7.08371 49.177 7.08371C48.0541 7.08371 47.0361 7.33598 46.1229 7.84053C45.2097 8.34507 44.4926 9.0447 43.9718 9.93944C43.4509 10.8342 43.1905 11.8332 43.1905 12.9364C43.1905 14.0397 43.4509 15.0387 43.9718 15.9334C44.4926 16.8282 45.2097 17.5278 46.1229 18.0323C47.0361 18.5369 48.0541 18.7892 49.177 18.7892ZM71.6456 5.8728V20.0001H70.4077L61.2757 8.5368V20.0001H59.774V5.8728H61.0119L70.1642 17.3361V5.8728H71.6456ZM76.0531 5.8728H81.8367C83.3385 5.8728 84.6643 6.17216 85.8142 6.77089C86.9642 7.36962 87.8571 8.20379 88.493 9.27344C89.1288 10.3431 89.4468 11.5641 89.4468 12.9364C89.4468 14.3088 89.1288 15.5298 88.493 16.5994C87.8571 17.6691 86.9642 18.5033 85.8142 19.102C84.6643 19.7007 83.3385 20.0001 81.8367 20.0001H76.0531V5.8728ZM81.7556 18.7084C83.0002 18.7084 84.0893 18.4629 85.0228 17.9718C85.9563 17.4807 86.6801 16.8013 87.1942 15.9334C87.7083 15.0656 87.9653 14.0666 87.9653 12.9364C87.9653 11.8062 87.7083 10.8073 87.1942 9.93944C86.6801 9.07161 85.9563 8.39217 85.0228 7.90107C84.0893 7.40998 83.0002 7.16444 81.7556 7.16444H77.5548V18.7084H81.7556ZM102.641 18.7084V20.0001H92.596V5.8728H102.337V7.16444H94.0977V12.1897H101.444V13.4612H94.0977V18.7084H102.641ZM115.653 20.0001L112.406 15.4592C112.041 15.4995 111.662 15.5197 111.27 15.5197H107.455V20.0001H105.953V5.8728H111.27C113.083 5.8728 114.503 6.30334 115.531 7.16444C116.56 8.02553 117.074 9.20952 117.074 10.7164C117.074 11.8197 116.793 12.7514 116.231 13.5116C115.67 14.2718 114.868 14.8201 113.827 15.1564L117.297 20.0001H115.653ZM111.229 14.2483C112.636 14.2483 113.712 13.9388 114.456 13.3199C115.2 12.701 115.572 11.8332 115.572 10.7164C115.572 9.57279 115.2 8.69489 114.456 8.08271C113.712 7.47052 112.636 7.16444 111.229 7.16444H107.455V14.2483H111.229ZM125.503 5.8728H131.287C132.788 5.8728 134.114 6.17216 135.264 6.77089C136.414 7.36962 137.307 8.20379 137.943 9.27344C138.579 10.3431 138.897 11.5641 138.897 12.9364C138.897 14.3088 138.579 15.5298 137.943 16.5994C137.307 17.6691 136.414 18.5033 135.264 19.102C134.114 19.7007 132.788 20.0001 131.287 20.0001H125.503V5.8728ZM131.206 18.7084C132.45 18.7084 133.539 18.4629 134.473 17.9718C135.406 17.4807 136.13 16.8013 136.644 15.9334C137.158 15.0656 137.415 14.0666 137.415 12.9364C137.415 11.8062 137.158 10.8073 136.644 9.93944C136.13 9.07161 135.406 8.39217 134.473 7.90107C133.539 7.40998 132.45 7.16444 131.206 7.16444H127.005V18.7084H131.206ZM142.046 5.8728H143.548V20.0001H142.046V5.8728ZM157.96 12.9364H159.401V18.325C158.738 18.9035 157.953 19.3475 157.047 19.657C156.14 19.9664 155.186 20.1212 154.185 20.1212C152.765 20.1212 151.486 19.8117 150.35 19.1928C149.213 18.5739 148.321 17.7162 147.671 16.6196C147.022 15.5231 146.697 14.2954 146.697 12.9364C146.697 11.5775 147.022 10.3498 147.671 9.25325C148.321 8.1567 149.213 7.29898 150.35 6.68007C151.486 6.06116 152.772 5.75171 154.206 5.75171C155.288 5.75171 156.282 5.92325 157.189 6.26635C158.095 6.60944 158.86 7.11734 159.482 7.79007L158.548 8.73862C157.426 7.63534 155.998 7.08371 154.267 7.08371C153.117 7.08371 152.078 7.33598 151.151 7.84053C150.225 8.34508 149.498 9.0447 148.97 9.93944C148.442 10.8342 148.179 11.8332 148.179 12.9364C148.179 14.0397 148.442 15.0353 148.97 15.9233C149.498 16.8114 150.221 17.511 151.141 18.0223C152.061 18.5335 153.096 18.7892 154.246 18.7892C155.707 18.7892 156.945 18.4259 157.96 17.6993V12.9364ZM163.423 5.8728H164.924V20.0001H163.423V5.8728ZM172.092 7.16444H167.1V5.8728H178.586V7.16444H173.594V20.0001H172.092V7.16444ZM188.959 16.2261H181.045L179.34 20.0001H177.778L184.272 5.8728H185.753L192.247 20.0001H190.664L188.959 16.2261ZM188.411 15.0152L185.002 7.4268L181.593 15.0152H188.411ZM194.382 5.8728H195.883V18.7084H203.838V20.0001H194.382V5.8728Z" fill="black"/>
+
+     <path class="logo-anim" fill-rule="evenodd" clip-rule="evenodd" stroke="#2e58d1" d="M12.4872 0.90918L24.0051 20.0001H0.96936L2.61477 17.2728H7.60675V17.2661H19.1133L12.4872 6.2833L7.26737 14.9352H4.02512L12.4872 0.90918Z" fill="none"/>
+     </svg>
+    </div>
+
+    <div class="mobile-menu">
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#">о нас</a>
+          </li>
+          <li>
+            <a href="#">услуги</a>
+          </li>
+          <li>
+            <a href="#">кейсы</a>
+          </li>
+          <li>
+            <a href="#">отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-contact">
+      <a href="tel:8(800)9999999" class="header-contact__link">8 (800) 999 99-99</a>
+      <a href="#" class="btn btn-default js-popup-open">Перезвоните мне</a>
+    </div>
+
+    <div class="burger js-open-menu">
+      <div class="burger__holder">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+  </div>
+</header>
+    
+    <section class="hero">
+      <div class="container">
+        <div class="hero__desc">
+          <h1 class="hero__title">
+            Привлечем клиентов в Ваш бизнес
+            <span>благодаря комплексному маркетингу</span>
+            в течении 7 дней 
+            <span>или вернем деньги.</span> 
+          </h1>
+          <a href="#" class="btn btn-default js-popup-open">Получить предложение</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="our-mission">
+      <div class="our-mission__container container">
+        <div class="our-mission__pic">
+          <img src="./data/illustration-01.svg" width="400" height="286" alt="illustration">
+        </div>
+        <div class="our-mission__desc " >
+          <h2 class="title">Миссия и принципы</h2>
+          <div class="desc">
+            <p>Комплексное маркетинговое агентство Sonder Digital основано в 2015 году. Основной миссией компании является развитие рекламной индустрии в стране с помощью комплексного подхода.</p>
+            <p>Принципом компании является максимальная ориентированность на конечный результат, подкрепленный четкими цифрами и аналитикой.</p>
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+    <section class="trust-triggers">
+      <div class="container">
+        <div class="title">Почему 147 компаний доверились нам</div>
+        <ul class="trust-triggers__list">
+          <li class="trust-triggers__items">
+            <div class="trust-triggers__inner">
+              <i class="trust-triggers__icon">
+                <img src="./data/trigger-01.svg" width="50" height="47" alt="icon">
+              </i>
+              <div class="trust-triggers__desc">
+                95% наших рекламных кампаний окупаются минимум в 2 раза за первый месяц
+              </div>
+            </div>
+          </li>
+          <li class="trust-triggers__items">
+            <div class="trust-triggers__inner">
+              <i class="trust-triggers__icon">
+                <img src="./data/trigger-02.svg" width="27" height="50" alt="icon">
+              </i>
+              <div class="trust-triggers__desc">
+                Мы настоящие фанатики своего дела, готовые работать 24 часа в сути, чтобы дать клиенту результат
+              </div>
+            </div>
+          </li>
+          <li class="trust-triggers__items">
+            <div class="trust-triggers__inner">
+              <i class="trust-triggers__icon">
+                <img src="./data/trigger-03.svg" width="48" height="40" alt="icon">
+              </i>
+              <div class="trust-triggers__desc">
+                Опыт в более, чем 100 нишах, 50+ описанных кейсов. Мы сможем помочь даже в самой сложной ситуации
+              </div>
+            </div>
+          </li>
+          <li class="trust-triggers__items">
+            <div class="trust-triggers__inner">
+              <i class="trust-triggers__icon">
+                <img src="./data/trigger-04.svg" width="50" height="42" alt="icon">
+              </i>
+              <div class="trust-triggers__desc">
+                Очень трепетно относимся к срокам и договоренностям. При нарушении сроков, прописанных в договоре - возвращаем деньги
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="our-services">
+      <div class="container">
+        <div class="title">Наши услуги</div>
+        <div class="subtitle">Ваш конечный результат - наш главный приоритет</div>
+        <ul class="our-services__list">
+          <li class="our-services__items">
+            <i class="our-services__icon">
+              <img src="./data/services-01.svg" width="46" height="50" alt="icon">
+            </i>
+            <strong class="our-services__title">Продвижение</strong>
+            <ul class="list">
+              <li class="list__items">Определение ЦА</li>
+              <li class="list__items">Составление текстов</li>
+              <li class="list__items">Составление тизеров</li>
+              <li class="list__items">Запуск РК</li>
+              <li class="list__items">Масштабирование</li>
+            </ul>
+            <div class="our-services__price">
+              от <strong>25 000</strong> руб/мес
+            </div>
+            <a href="#" class="btn btn-default js-popup-open">Оставить заявку</a>
+          </li>
+          <li class="our-services__items">
+            <i class="our-services__icon">
+              <img src="./data/services-02.svg" width="64" height="43" alt="icon">
+            </i>
+            <strong class="our-services__title">Соц. сети</strong>
+            <ul class="list">
+              <li class="list__items">Определение ЦА</li>
+              <li class="list__items">Составление текстов</li>
+              <li class="list__items">Составление тизеров</li>
+              <li class="list__items">Запуск РК</li>
+              <li class="list__items">Масштабирование</li>
+            </ul>
+            <div class="our-services__price">
+              от <strong>12 000</strong> руб/мес
+            </div>
+            <a href="#" class="btn btn-default js-popup-open">Оставить заявку</a>
+          </li>
+          <li class="our-services__items">
+            <i class="our-services__icon">
+              <img src="./data/services-03.svg" width="63" height="57" alt="icon">
+            </i>
+            <strong class="our-services__title">Сайты</strong>
+            <ul class="list">
+              <li class="list__items">Определение ЦА</li>
+              <li class="list__items">Составление текстов</li>
+              <li class="list__items">Составление тизеров</li>
+              <li class="list__items">Запуск РК</li>
+              <li class="list__items">Масштабирование</li>
+            </ul>
+            <div class="our-services__price">
+              от <strong>50 000</strong> руб/мес
+            </div>
+            <a href="#" class="btn btn-default js-popup-open">Оставить заявку</a>
+          </li>
+          <li class="our-services__items">
+            <i class="our-services__icon">
+              <img src="./data/services-04.svg" width="60" height="56" alt="icon">
+            </i>
+            <strong class="our-services__title">Консалтинг</strong>
+            <ul class="list">
+              <li class="list__items">Анализ:</li>
+              <li class="list__items">Оформления</li>
+              <li class="list__items">Маркетинг-стратегии</li>
+              <li class="list__items">Рекламных кампаний</li>
+              <li class="list__items">Продаж</li>
+            </ul>
+            <div class="our-services__price">
+              от <strong>50 000</strong> руб/мес
+            </div>
+            <a href="#" class="btn btn-default js-popup-open">Оставить заявку</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="our-mission our-case">
+      <div class="our-mission__container container">
+        <div class="our-mission__pic">
+          <img src="/data/illustration-02.svg " width="577" height="347" alt="illustration">
+        </div>
+        <div class="our-mission__desc" >
+          <h2 class="title">Кейсы</h2>
+          <div class="desc">
+            <p>Слова ничего не значат, если за ними нет реальной статистики. За время работы наша команда принесла результат более 100 клиентам, ниже вы сможете ознакомиться с ними подробнее.</p>
+          </div>
+        </div>
+      </div>
+      <div class="our-case__carousel container">
+        <div class="carousel">
+          
+          <div class="carousel__items">
+            <div class="carousel__holder">
+              <div class="carousel__block">
+                <strong class="title">Прибыльная недвижимость</strong>
+                <div class="subtitle">Услуга Создание сайта</div>
+                <ul class="carousel-list">
+                  <li class="carousel-list__items">
+                    <p>Тема: <span>обучение</span></p>
+                    <p>Цель: <span>продажа курса "прибыльная недвижимость"</span></p>
+                  </li>
+                  <li class="carousel-list__items">
+                    <p>Затраты времени: <span>18 дней</span></p>
+                    <p>Конверсия сайта: <span>5%</span></p>
+                  </li>
+                </ul>  
+              </div>
+              <div class="carousel__pic">
+                <div class="carousel__pic-mac">
+                  <img src="./data/macbook.png" alt="pic" width="420" height="223">
+                </div>
+                <div class="carousel__pic-iphone">
+                  <img src="./data/iPhone-X.png" alt="pic" width="95" height="190">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__items">
+            <div class="carousel__holder">
+              <div class="carousel__block">
+                <strong class="title">Прибыльная недвижимость</strong>
+                <div class="subtitle">Услуга Создание сайта</div>
+                <ul class="carousel-list">
+                  <li class="carousel-list__items">
+                    <p>Тема: <span>обучение</span></p>
+                    <p>Цель: <span>продажа курса "прибыльная недвижимость"</span></p>
+                  </li>
+                  <li class="carousel-list__items">
+                    <p>Затраты времени: <span>18 дней</span></p>
+                    <p>Конверсия сайта: <span>5%</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel__pic">
+                <div class="carousel__pic-mac">
+                  <img src="./data/macbook.png" alt="pic" width="420" height="223">
+                </div>
+                <div class="carousel__pic-iphone">
+                  <img src="./data/iPhone-X.png" alt="pic" width="95" height="190">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__items">
+            <div class="carousel__holder">
+              <div class="carousel__block">
+                <strong class="title">Прибыльная недвижимость</strong>
+                <div class="subtitle">Услуга Создание сайта</div>
+                <ul class="carousel-list">
+                  <li class="carousel-list__items">
+                    <p>Тема: <span>обучение</span></p>
+                    <p>Цель: <span>продажа курса "прибыльная недвижимость"</span></p>
+                  </li>
+                  <li class="carousel-list__items">
+                    <p>Затраты времени: <span>18 дней</span></p>
+                    <p>Конверсия сайта: <span>5%</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel__pic">
+                <div class="carousel__pic-mac">
+                  <img src="./data/macbook.png" alt="pic" width="420" height="223">
+                </div>
+                <div class="carousel__pic-iphone">
+                  <img src="./data/iPhone-X.png" alt="pic" width="95" height="190">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__items">
+            <div class="carousel__holder">
+              <div class="carousel__block">
+                <strong class="title">Прибыльная недвижимость</strong>
+                <div class="subtitle">Услуга Создание сайта</div>
+                <ul class="carousel-list">
+                  <li class="carousel-list__items">
+                    <p>Тема: <span>обучение</span></p>
+                    <p>Цель: <span>продажа курса "прибыльная недвижимость"</span></p>
+                  </li>
+                  <li class="carousel-list__items">
+                    <p>Затраты времени: <span>18 дней</span></p>
+                    <p>Конверсия сайта: <span>5%</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel__pic">
+                <div class="carousel__pic-mac">
+                  <img src="./data/macbook.png" alt="pic" width="420" height="223">
+                </div>
+                <div class="carousel__pic-iphone">
+                  <img src="./data/iPhone-X.png" alt="pic" width="95" height="190">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__items">
+            <div class="carousel__holder">
+              <div class="carousel__block">
+                <strong class="title">Прибыльная недвижимость</strong>
+                <div class="subtitle">Услуга Создание сайта</div>
+                <ul class="carousel-list">
+                  <li class="carousel-list__items">
+                    <p>Тема: <span>обучение</span></p>
+                    <p>Цель: <span>продажа курса "прибыльная недвижимость"</span></p>
+                  </li>
+                  <li class="carousel-list__items">
+                    <p>Затраты времени: <span>18 дней</span></p>
+                    <p>Конверсия сайта: <span>5%</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel__pic">
+                <div class="carousel__pic-mac">
+                  <img src="./data/macbook.png" alt="pic" width="420" height="223">
+                </div>
+                <div class="carousel__pic-iphone">
+                  <img src="./data/iPhone-X.png" alt="pic" width="95" height="190">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__items">
+            <div class="carousel__holder">
+              <div class="carousel__block">
+                <strong class="title">Прибыльная недвижимость</strong>
+                <div class="subtitle">Услуга Создание сайта</div>
+                <ul class="carousel-list">
+                  <li class="carousel-list__items">
+                    <p>Тема: <span>обучение</span></p>
+                    <p>Цель: <span>продажа курса "прибыльная недвижимость"</span></p>
+                  </li>
+                  <li class="carousel-list__items">
+                    <p>Затраты времени: <span>18 дней</span></p>
+                    <p>Конверсия сайта: <span>5%</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel__pic">
+                <div class="carousel__pic-mac">
+                  <img src="./data/macbook.png" alt="pic" width="420" height="223">
+                </div>
+                <div class="carousel__pic-iphone">
+                  <img src="./data/iPhone-X.png" alt="pic" width="95" height="190">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div> 
+      </div>
+    </section>
+    
+    <section class="fill-form">
+      <div class="container">
+        <div class="title">Заполните форму и вы получите:</div>
+        <ul class="fill-form__list">
+          <li class="fill-form__items">Бесплатный аудит вашего маркетинга.</li>
+          <li class="fill-form__items">Список рекомендаций по увеличению количества заявок</li>
+          <li class="fill-form__items">Увидите, где вы тратите  деньги впустую</li>
+        </ul>
+        <form action="#" class="form">
+          <div class="form__row">
+            <input type="tel" class="form__control" placeholder="Ваш телефон">
+          </div>
+          <div class="form__row">
+            <input type="text" class="form__control" placeholder="Сфера вашей деятельности">
+          </div>
+          <button type="submit" class="btn btn-default">Получить аудит</button>
+          
+        </form>
+      </div>
+    </section>
+    
+    <div class="work-stages">
+      <div class="container">
+        <div class="title">Этапы работы</div>
+        <div class="work-stages__holder">
+          <div class="work-stages__row">
+            <div class="work-stages__line"></div>
+            <div class="work-stages__inner">
+              <div class="work-stages__step">
+                <div class="step is-active">
+                  <i class="step__count">1</i>
+                </div>
+                <div class="work-stages__desc">
+                  <span class="work-stages__days">1 день</span>
+                  <p class="work-stages__txt">Составление стратегии, определение нужных услуг</p>
+                </div>
+              </div>
+              <div class="work-stages__step">
+                <div class="step">
+                  <i class="step__count">2</i>
+                </div>
+                <div class="work-stages__desc">
+                  <span class="work-stages__days">2-3 день</span>
+                  <p class="work-stages__txt">Детальная проработка целевой аудитории</p>
+                </div>
+              </div>
+              <div class="work-stages__step">
+                <div class="step">
+                  <i class="step__count">3</i>
+                </div>
+                <div class="work-stages__desc">
+                  <span class="work-stages__days">4-6 день</span>
+                  <p class="work-stages__txt">Проведение работ, регулярная отчетнось</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-stages__row">
+            <div class="work-stages__line"></div>
+            <div class="work-stages__inner">
+              <div class="work-stages__step">
+                <div class="step">
+                  <i class="step__count">4</i>
+                </div>
+                <div class="work-stages__desc">
+                  <span class="work-stages__days">7 день</span>
+                  <p class="work-stages__txt">Вы получаете первых клиентов</p>
+                </div>
+              </div>
+              <div class="work-stages__step">
+                <div class="step">
+                  <i class="step__count">5</i>
+                </div>
+                <div class="work-stages__desc">
+                  <span class="work-stages__days">8-30 день</span>
+                  <p class="work-stages__txt">Оптимизация результатов на основе полученных данных</p>
+                </div>
+              </div>
+              <div class="work-stages__step">
+                <div class="step">
+                  <i class="step__count">6</i>
+                </div>
+                <div class="work-stages__desc">
+                  <span class="work-stages__days">31 день</span>
+                  <p class="work-stages__txt">Продлеваем договор и приносим вам дальше клиентов</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="our-mission co-worker">
+      <div class="our-mission__container container">
+        <div class="our-mission__countainer"></div>
+        <div class="our-mission__pic">
+          <img src="/data/illustration-03.svg " width="458" height="353" alt="illustration">
+        </div>
+        <div class="our-mission__desc" >
+          <h2 class="title">Сотрудники</h2>
+          <div class="desc">
+            <p>Основа любого бизнеса - это люди. В нашей компании мы объединяем специалистов, чьим главным принципом является максимальная приверженность делу, готовность пожертвовать всем, ради достижения результата.</p>
+          </div>
+        </div>
+      </div>
+      <div class="co-worker__container container">
+        <ul class="team">
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-01.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-02.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-01.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-02.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-01.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-02.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-01.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+          <li class="team__items">
+            <div class="team__icon">
+              <img src="./data/team-02.jpg" width="116" height="116" alt="pic">
+            </div>
+            <div class="team__name">Донская Анастасия</div>
+            <div class="team__status">Контент-менеджер</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="our-mission our-performances">
+      <div class="our-mission__container container">
+        <div class="our-performances__video" >
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sFHUK-CJf8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="our-mission__desc" >
+          <h2 class="title">Наши выступления</h2>
+          <div class="desc">
+            <p>Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши выступления, чтобы убедиться, что вы будете работать с экспертами своего дела.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <section class="customer-reviews">
+      <div class="container">
+        <div class="title">Отзывы наших клиентов</div>
+        <div class="customer-reviews__main">
+          <div class="reviews">
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это  время успели выступить на многих конференциях. Посмотрите наши выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши
+                    выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши
+                    выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши
+                    выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши
+                    выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши
+                    выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews__holder">
+                <div class="reviews__pic">
+                  <img src="./data/review-01.jpg" width="129" height="195" alt="pic">
+                </div>
+                <div class="reviews__block">
+                  <div class="reviews__name">Анастасия Васильева</div>
+                  <div class="reviews__company">Название компании</div>
+                  <a href="#" target="_blank" class="reviews__link">vk.com</a>
+                  <div class="reviews__desc">
+                    Мы давно занимаемся маркетингом и за это время успели выступить на многих конференциях. Посмотрите наши
+                    выступления,чтобы убедиться, что вы будете работать с экспертами своего дела.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-reviews__all">
+          <a href="#" target="_blank">Читать все отзывы в ВК</a>  
+        </div>
+      </div>
+    </section>
+    
+    <section class="fill-form fill-form--bg" >
+      <div class="container">
+        <div class="title">Заполните форму и вы получите:</div>
+        <ul class="fill-form__list">
+          <li class="fill-form__items">Бесплатный аудит вашего маркетинга.</li>
+          <li class="fill-form__items">Список рекомендаций по увеличению количества заявок</li>
+          <li class="fill-form__items">Увидите, где вы тратите деньги впустую</li>
+        </ul>
+        <form action="#" class="form">
+          <div class="form__row">
+            <input type="tel" class="form__control" placeholder="Ваш телефон">
+          </div>
+          <div class="form__row">
+            <input type="text" class="form__control" placeholder="Сфера вашей деятельности">
+          </div>
+          <button type="submit" class="btn btn-default">Получить аудит</button>
+        </form>
+        <div class="fill-form__hidden">
+          <img src="/data/fill-form-bg.svg" alt="pic">
+        </div>
+      </div>
+    </section>
+    
+    <div class="popup">
+      <div class="popup__overlay"></div>
+      <div class="popup__holder">
+        <div class="popup__content">
+          <button class="popup__close js-popup-close"></button>
+          <form action="#" class="form">
+            <p class="form__title">Заполните форму, чтобы получить клиентов в свой бизнес</p>
+            <div class="form__row">
+              <input type="tel" class="form__control" placeholder="Ваш телефон">
+            </div>
+            <div class="form__row">
+              <input type="text" class="form__control" placeholder="Сфера вашей деятельности">
+            </div>
+            <button type="submit" class="btn btn-default">Получить аудит</button>
+            <div class="form__notific">Мы с вами свяжемся и расскажем, сколько клиентов вы сможете получить за первый месяц</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer__container container">
+    
+    <div class="logo">
+     <svg width="204" height="21" viewBox="0 0 204 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M34.6228 20.1212C33.5676 20.1212 32.5563 19.953 31.589 19.6166C30.6217 19.2803 29.8742 18.8363 29.3466 18.2846L29.9351 17.1343C30.4492 17.6455 31.1324 18.0593 31.9847 18.3754C32.837 18.6916 33.7164 18.8497 34.6228 18.8497C35.8946 18.8497 36.8483 18.6176 37.4842 18.1534C38.1201 17.6893 38.438 17.0872 38.438 16.3472C38.438 15.7821 38.2655 15.3313 37.9205 14.995C37.5755 14.6586 37.1527 14.3996 36.6522 14.218C36.1516 14.0363 35.4549 13.8379 34.562 13.6226C33.4932 13.3535 32.6409 13.0945 32.005 12.8456C31.3691 12.5967 30.8246 12.2166 30.3714 11.7053C29.9182 11.1941 29.6915 10.5012 29.6915 9.62662C29.6915 8.91352 29.8809 8.26435 30.2598 7.67907C30.6386 7.0938 31.2203 6.62626 32.005 6.27644C32.7897 5.92662 33.7637 5.75171 34.9272 5.75171C35.739 5.75171 36.5338 5.86271 37.3117 6.08471C38.0896 6.30671 38.7627 6.6128 39.3309 7.00298L38.8236 8.19371C38.2283 7.80353 37.5924 7.51089 36.916 7.3158C36.2395 7.12071 35.5766 7.02316 34.9272 7.02316C33.6826 7.02316 32.7457 7.26198 32.1166 7.73962C31.4875 8.21726 31.173 8.8328 31.173 9.58625C31.173 10.1513 31.3455 10.6054 31.6904 10.9485C32.0354 11.2916 32.4684 11.554 32.9892 11.7356C33.5101 11.9173 34.2102 12.1157 35.0896 12.331C36.1313 12.5866 36.9735 12.8389 37.6161 13.0878C38.2587 13.3367 38.8033 13.7134 39.2497 14.218C39.6962 14.7225 39.9194 15.4053 39.9194 16.2664C39.9194 16.9795 39.7266 17.6287 39.341 18.214C38.9555 18.7993 38.3636 19.2634 37.5654 19.6065C36.7672 19.9496 35.7863 20.1212 34.6228 20.1212ZM49.177 20.1212C47.77 20.1212 46.4949 19.8083 45.3517 19.1827C44.2085 18.5571 43.3156 17.6994 42.673 16.6095C42.0303 15.5197 41.709 14.2954 41.709 12.9364C41.709 11.5775 42.0303 10.3532 42.673 9.26335C43.3156 8.17352 44.2085 7.3158 45.3517 6.69016C46.4949 6.06452 47.77 5.75171 49.177 5.75171C50.584 5.75171 51.8523 6.06116 52.982 6.68007C54.1117 7.29898 55.0012 8.1567 55.6506 9.25325C56.3 10.3498 56.6247 11.5775 56.6247 12.9364C56.6247 14.2954 56.3 15.5231 55.6506 16.6196C55.0012 17.7162 54.1117 18.5739 52.982 19.1928C51.8523 19.8117 50.584 20.1212 49.177 20.1212ZM49.177 18.7892C50.2999 18.7892 51.3146 18.5369 52.221 18.0323C53.1275 17.5278 53.8377 16.8282 54.3518 15.9334C54.8659 15.0387 55.123 14.0397 55.123 12.9364C55.123 11.8332 54.8659 10.8342 54.3518 9.93944C53.8377 9.0447 53.1275 8.34507 52.221 7.84053C51.3146 7.33598 50.2999 7.08371 49.177 7.08371C48.0541 7.08371 47.0361 7.33598 46.1229 7.84053C45.2097 8.34507 44.4926 9.0447 43.9718 9.93944C43.4509 10.8342 43.1905 11.8332 43.1905 12.9364C43.1905 14.0397 43.4509 15.0387 43.9718 15.9334C44.4926 16.8282 45.2097 17.5278 46.1229 18.0323C47.0361 18.5369 48.0541 18.7892 49.177 18.7892ZM71.6456 5.8728V20.0001H70.4077L61.2757 8.5368V20.0001H59.774V5.8728H61.0119L70.1642 17.3361V5.8728H71.6456ZM76.0531 5.8728H81.8367C83.3385 5.8728 84.6643 6.17216 85.8142 6.77089C86.9642 7.36962 87.8571 8.20379 88.493 9.27344C89.1288 10.3431 89.4468 11.5641 89.4468 12.9364C89.4468 14.3088 89.1288 15.5298 88.493 16.5994C87.8571 17.6691 86.9642 18.5033 85.8142 19.102C84.6643 19.7007 83.3385 20.0001 81.8367 20.0001H76.0531V5.8728ZM81.7556 18.7084C83.0002 18.7084 84.0893 18.4629 85.0228 17.9718C85.9563 17.4807 86.6801 16.8013 87.1942 15.9334C87.7083 15.0656 87.9653 14.0666 87.9653 12.9364C87.9653 11.8062 87.7083 10.8073 87.1942 9.93944C86.6801 9.07161 85.9563 8.39217 85.0228 7.90107C84.0893 7.40998 83.0002 7.16444 81.7556 7.16444H77.5548V18.7084H81.7556ZM102.641 18.7084V20.0001H92.596V5.8728H102.337V7.16444H94.0977V12.1897H101.444V13.4612H94.0977V18.7084H102.641ZM115.653 20.0001L112.406 15.4592C112.041 15.4995 111.662 15.5197 111.27 15.5197H107.455V20.0001H105.953V5.8728H111.27C113.083 5.8728 114.503 6.30334 115.531 7.16444C116.56 8.02553 117.074 9.20952 117.074 10.7164C117.074 11.8197 116.793 12.7514 116.231 13.5116C115.67 14.2718 114.868 14.8201 113.827 15.1564L117.297 20.0001H115.653ZM111.229 14.2483C112.636 14.2483 113.712 13.9388 114.456 13.3199C115.2 12.701 115.572 11.8332 115.572 10.7164C115.572 9.57279 115.2 8.69489 114.456 8.08271C113.712 7.47052 112.636 7.16444 111.229 7.16444H107.455V14.2483H111.229ZM125.503 5.8728H131.287C132.788 5.8728 134.114 6.17216 135.264 6.77089C136.414 7.36962 137.307 8.20379 137.943 9.27344C138.579 10.3431 138.897 11.5641 138.897 12.9364C138.897 14.3088 138.579 15.5298 137.943 16.5994C137.307 17.6691 136.414 18.5033 135.264 19.102C134.114 19.7007 132.788 20.0001 131.287 20.0001H125.503V5.8728ZM131.206 18.7084C132.45 18.7084 133.539 18.4629 134.473 17.9718C135.406 17.4807 136.13 16.8013 136.644 15.9334C137.158 15.0656 137.415 14.0666 137.415 12.9364C137.415 11.8062 137.158 10.8073 136.644 9.93944C136.13 9.07161 135.406 8.39217 134.473 7.90107C133.539 7.40998 132.45 7.16444 131.206 7.16444H127.005V18.7084H131.206ZM142.046 5.8728H143.548V20.0001H142.046V5.8728ZM157.96 12.9364H159.401V18.325C158.738 18.9035 157.953 19.3475 157.047 19.657C156.14 19.9664 155.186 20.1212 154.185 20.1212C152.765 20.1212 151.486 19.8117 150.35 19.1928C149.213 18.5739 148.321 17.7162 147.671 16.6196C147.022 15.5231 146.697 14.2954 146.697 12.9364C146.697 11.5775 147.022 10.3498 147.671 9.25325C148.321 8.1567 149.213 7.29898 150.35 6.68007C151.486 6.06116 152.772 5.75171 154.206 5.75171C155.288 5.75171 156.282 5.92325 157.189 6.26635C158.095 6.60944 158.86 7.11734 159.482 7.79007L158.548 8.73862C157.426 7.63534 155.998 7.08371 154.267 7.08371C153.117 7.08371 152.078 7.33598 151.151 7.84053C150.225 8.34508 149.498 9.0447 148.97 9.93944C148.442 10.8342 148.179 11.8332 148.179 12.9364C148.179 14.0397 148.442 15.0353 148.97 15.9233C149.498 16.8114 150.221 17.511 151.141 18.0223C152.061 18.5335 153.096 18.7892 154.246 18.7892C155.707 18.7892 156.945 18.4259 157.96 17.6993V12.9364ZM163.423 5.8728H164.924V20.0001H163.423V5.8728ZM172.092 7.16444H167.1V5.8728H178.586V7.16444H173.594V20.0001H172.092V7.16444ZM188.959 16.2261H181.045L179.34 20.0001H177.778L184.272 5.8728H185.753L192.247 20.0001H190.664L188.959 16.2261ZM188.411 15.0152L185.002 7.4268L181.593 15.0152H188.411ZM194.382 5.8728H195.883V18.7084H203.838V20.0001H194.382V5.8728Z" fill="black"/>
+
+     <path class="logo-anim" fill-rule="evenodd" clip-rule="evenodd" stroke="#2e58d1" d="M12.4872 0.90918L24.0051 20.0001H0.96936L2.61477 17.2728H7.60675V17.2661H19.1133L12.4872 6.2833L7.26737 14.9352H4.02512L12.4872 0.90918Z" fill="none"/>
+     </svg>
+    </div>
+
+    
+    <a href="" class="privacy-policy">Политика конфиденциальности</a>
+    
+    <ul class="soc">
+      <li class="soc__list">
+        <a href="#" target="_blank" class="soc__link">
+          <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="vk" stroke="#3d66dd" stroke-width="1" fill-rule="evenodd" clip-rule="evenodd"
+            d="M23.8727 12.6435C23.8437 12.5795 23.8166 12.5264 23.7914 12.4838C23.375 11.7171 22.5793 10.7759 21.4047 9.66014L21.3799 9.63459L21.3675 9.62206L21.3549 9.60922H21.3423C20.8092 9.08965 20.4716 8.7403 20.3303 8.56144C20.0716 8.22073 20.0137 7.87586 20.155 7.52642C20.2549 7.26241 20.6301 6.70485 21.2797 5.85298C21.6213 5.40152 21.892 5.03968 22.0918 4.76708C23.5331 2.80801 24.1579 1.55614 23.9662 1.01098L23.8918 0.883578C23.8418 0.806879 23.7127 0.736715 23.5046 0.672725C23.2961 0.608869 23.0296 0.598309 22.7047 0.640864L19.106 0.666281C19.0477 0.64516 18.9644 0.647129 18.856 0.672725C18.7477 0.698321 18.6935 0.711163 18.6935 0.711163L18.6308 0.743158L18.5811 0.781597C18.5395 0.807014 18.4936 0.851717 18.4436 0.915617C18.3938 0.979294 18.3522 1.05402 18.319 1.13918C17.9272 2.16977 17.4817 3.12796 16.9817 4.0137C16.6735 4.54186 16.3904 4.99959 16.1319 5.38715C15.8737 5.77458 15.6571 6.06003 15.4823 6.243C15.3072 6.42616 15.1492 6.57289 15.0073 6.68373C14.8657 6.79461 14.7575 6.84146 14.6826 6.82433C14.6076 6.80719 14.5369 6.79018 14.47 6.77318C14.3534 6.69648 14.2597 6.59217 14.189 6.46017C14.118 6.32816 14.0702 6.16201 14.0452 5.96185C14.0203 5.76156 14.0056 5.58928 14.0014 5.44443C13.9975 5.29976 13.9993 5.09513 14.0078 4.83111C14.0164 4.56697 14.0203 4.38824 14.0203 4.29454C14.0203 3.97083 14.0265 3.61952 14.0389 3.2405C14.0515 2.86149 14.0617 2.56118 14.0702 2.33995C14.0787 2.11849 14.0827 1.88419 14.0827 1.63718C14.0827 1.39017 14.068 1.19646 14.0389 1.05586C14.0102 0.915438 13.9661 0.779136 13.908 0.646995C13.8496 0.514988 13.7641 0.412873 13.6519 0.340381C13.5394 0.267979 13.3996 0.210523 13.2333 0.167833C12.7917 0.0656733 12.2294 0.0104095 11.5462 0.00181783C9.99681 -0.0151864 9.00124 0.0871076 8.55972 0.308566C8.38478 0.402134 8.22648 0.529979 8.08493 0.691698C7.93495 0.879148 7.91402 0.981441 8.0223 0.998267C8.52221 1.07483 8.87611 1.25798 9.0844 1.54755L9.15946 1.70099C9.21784 1.8117 9.27614 2.00769 9.33448 2.28871C9.39273 2.56973 9.43033 2.88059 9.44687 3.22112C9.48845 3.84299 9.48845 4.37531 9.44687 4.81814C9.40516 5.26114 9.36577 5.60602 9.32818 5.85302C9.29058 6.10003 9.23439 6.30019 9.15946 6.45345C9.0844 6.60676 9.03446 6.70046 9.00942 6.73447C8.98443 6.76848 8.9636 6.78991 8.94705 6.79833C8.83878 6.84075 8.72616 6.86236 8.60961 6.86236C8.49289 6.86236 8.35134 6.80267 8.18477 6.68337C8.01823 6.56407 7.8454 6.4002 7.66626 6.1915C7.48712 5.98275 7.28509 5.69104 7.06009 5.31632C6.83526 4.9416 6.60198 4.49873 6.36039 3.9877L6.1605 3.6171C6.03555 3.37868 5.86486 3.03153 5.64825 2.57595C5.43152 2.12019 5.23995 1.67933 5.07342 1.25346C5.00685 1.07461 4.90684 0.938439 4.77357 0.844736L4.71103 0.806298C4.66945 0.772289 4.60271 0.736178 4.51115 0.697694C4.41945 0.659256 4.32378 0.631691 4.22373 0.614731L0.799884 0.640148C0.450012 0.640148 0.21262 0.721187 0.0876214 0.883041L0.0375958 0.959605C0.0126049 1.00225 0 1.07036 0 1.1641C0 1.25781 0.0249909 1.37281 0.0750165 1.50898C0.574835 2.71001 1.11838 3.86832 1.70564 4.98406C2.29291 6.09981 2.80323 6.99857 3.2363 7.67955C3.66946 8.36102 4.11098 9.00418 4.56086 9.60873C5.01074 10.2135 5.30854 10.6011 5.45424 10.7713C5.60011 10.9419 5.71469 11.0694 5.79798 11.1546L6.11043 11.4612C6.31036 11.6656 6.60395 11.9105 6.99133 12.1957C7.3788 12.4812 7.80776 12.7622 8.27843 13.0392C8.74919 13.3158 9.29684 13.5415 9.9217 13.7161C10.5465 13.8908 11.1546 13.961 11.7461 13.9271H13.1831C13.4746 13.9014 13.6954 13.8077 13.8455 13.646L13.8952 13.5819C13.9286 13.5311 13.9599 13.4521 13.9888 13.3459C14.018 13.2394 14.0326 13.1221 14.0326 12.9945C14.024 12.6284 14.0513 12.2984 14.1136 12.0045C14.1759 11.7108 14.2469 11.4894 14.3263 11.3402C14.4056 11.1912 14.4952 11.0655 14.5948 10.9635C14.6947 10.8614 14.7659 10.7995 14.8076 10.7782C14.8491 10.7567 14.8822 10.7422 14.9072 10.7335C15.1072 10.6654 15.3425 10.7313 15.6135 10.9317C15.8842 11.1318 16.1382 11.379 16.3758 11.6727C16.6132 11.9667 16.8985 12.2965 17.2317 12.6627C17.565 13.029 17.8565 13.3013 18.1063 13.4804L18.3562 13.6337C18.523 13.736 18.7396 13.8297 19.0062 13.9149C19.2724 14 19.5056 14.0213 19.7058 13.9787L22.9046 13.9277C23.221 13.9277 23.4672 13.8742 23.6418 13.7679C23.8168 13.6614 23.9207 13.5441 23.9543 13.4166C23.9877 13.2888 23.9895 13.144 23.9606 12.982C23.931 12.8204 23.9018 12.7074 23.8727 12.6435Z"
+            fill="#3d66dd" />
+          </svg>
+        </a>
+      </li>
+      <li class="soc__list">
+        <a href="#" target="_blank" class="soc__link">
+          <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fb" stroke="#3d66dd" stroke-width="1" fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.5105 0.0049936L9.39235 0C5.88926 0 3.62541 2.31828 3.62541 5.90643V8.62969H0.490292C0.219381 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.219631 13.5544 0.490292 13.5544H3.62541V23.5106C3.62541 23.781 3.84479 24 4.1157 24H8.20614C8.47705 24 8.69643 23.7808 8.69643 23.5106V13.5544H12.3621C12.633 13.5544 12.8524 13.3354 12.8524 13.065L12.8539 9.11932C12.8539 8.98948 12.8021 8.86514 12.7103 8.77326C12.6185 8.68138 12.4934 8.62969 12.3634 8.62969H8.69643V6.32115C8.69643 5.21157 8.96134 4.64829 10.4095 4.64829L12.51 4.64755C12.7806 4.64755 13 4.42833 13 4.15817V0.494367C13 0.224462 12.7809 0.00549296 12.5105 0.0049936Z"
+            fill="#3d66dd" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+</footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
